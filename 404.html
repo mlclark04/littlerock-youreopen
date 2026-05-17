@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found — Little Rock: You're Open</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#1a2744" />
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --white:       #ffffff;
+      --navy:        #1a2744;
+      --amber:       #c8873a;
+      --amber-dark:  #a86e28;
+      --amber-light: #e8a84e;
+      --amber-pale:  #fdf3e3;
+      --gray-500:    #666666;
+      --text:        #1a1a1a;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--navy);
+      color: var(--white);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* NAV */
+    nav {
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 48px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.9);
+      text-decoration: none;
+    }
+
+    .nav-logo span { color: var(--amber-light); }
+
+    /* MAIN */
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 24px;
+      text-align: center;
+    }
+
+    .error-inner { max-width: 520px; }
+
+    .error-code {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(6rem, 20vw, 10rem);
+      font-weight: 700;
+      color: var(--amber-light);
+      line-height: 1;
+      opacity: 0.25;
+    }
+
+    .error-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      color: rgba(255,255,255,0.95);
+      line-height: 1.15;
+      margin-top: -16px;
+    }
+
+    .error-title em {
+      font-style: italic;
+      color: var(--amber-light);
+    }
+
+    .error-body {
+      margin-top: 20px;
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.75;
+      color: rgba(255,255,255,0.55);
+    }
+
+    .error-actions {
+      margin-top: 36px;
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--amber);
+      color: white;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      padding: 14px 28px;
+      border-radius: 100px;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .btn-primary:hover { background: var(--amber-dark); transform: translateY(-2px); }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 400;
+      padding: 14px 28px;
+      border-radius: 100px;
+      border: 1.5px solid rgba(255,255,255,0.2);
+      transition: border-color 0.2s, color 0.2s, transform 0.15s;
+    }
+
+    .btn-secondary:hover {
+      border-color: rgba(255,255,255,0.5);
+      color: rgba(255,255,255,0.95);
+      transform: translateY(-2px);
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 28px 48px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.5);
+    }
+
+    .footer-logo span { color: var(--amber-light); opacity: 0.6; }
+
+    .footer-right {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.35);
+    }
+
+    /* FOCUS */
+    :focus-visible {
+      outline: 3px solid var(--amber);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    @media (max-width: 600px) {
+      nav { padding: 0 24px; }
+      footer { padding: 24px; flex-direction: column; gap: 8px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav aria-label="Main navigation">
+    <a href="/" class="nav-logo">Little Rock:<span> You're Open</span></a>
+  </nav>
+
+  <main>
+    <div class="error-inner">
+      <div class="error-code" aria-hidden="true">404</div>
+      <h1 class="error-title">This page isn't<br><em>open yet.</em></h1>
+      <p class="error-body">The page you're looking for doesn't exist — but the program does. Head back home or go straight to the application.</p>
+      <div class="error-actions">
+        <a href="/" class="btn-primary">Back to home →</a>
+        <a href="/apply.html" class="btn-secondary">Apply for free</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-logo">Little Rock<span>: You're Open</span></div>
+    <div class="footer-right">&copy; 2026 <a href="https://www.raregemmedia.com/" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;opacity:0.7;">RARE GEM Media</a></div>
+  </footer>
+
+</body>
+</html>

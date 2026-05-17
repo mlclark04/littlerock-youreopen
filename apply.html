@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apply — Little Rock: You're Open</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- SEO: Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://littlerockyoureopen.com/apply.html" />
+  <meta property="og:site_name" content="Little Rock: You're Open" />
+  <meta property="og:title" content="Apply — Little Rock: You're Open" />
+  <meta property="og:description" content="Apply for a free website for your Little Rock food business. One business selected per month. Restaurants, food trucks, cafes, diners, bakeries, and bars welcome." />
+  <meta property="og:image" content="https://littlerockyoureopen.com/images/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Little Rock: You're Open — A free web presence program for local food businesses in Little Rock, AR" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- SEO: Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@raregemmedia" />
+  <meta name="twitter:creator" content="@raregemmedia" />
+  <meta name="twitter:title" content="Apply — Little Rock: You're Open" />
+  <meta name="twitter:description" content="Apply for a free website for your Little Rock food business. One business selected per month." />
+  <meta name="twitter:image" content="https://littlerockyoureopen.com/images/og-image.png" />
+  <meta name="twitter:image:alt" content="Little Rock: You're Open — A free web presence program for local food businesses in Little Rock, AR" />
+
+  <!-- SEO: Meta -->
+  <meta name="description" content="Apply for a free website for your Little Rock food business. One business selected per month." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#1a2744" />
+  <link rel="canonical" href="https://littlerockyoureopen.com/apply.html" />
+
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <noscript>
+    <style>.reveal { opacity: 1; transform: none; }</style>
+  </noscript>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --white:       #ffffff;
+      --off-white:   #fafafa;
+      --gray-100:    #ebebeb;
+      --gray-200:    #d4d4d4;
+      --gray-500:    #666666;
+      --gray-700:    #404040;
+      --navy:        #1a2744;
+      --amber:       #c8873a;
+      --amber-dark:  #a86e28;
+      --amber-light: #e8a84e;
+      --amber-pale:  #fdf3e3;
+      --text:        #1a1a1a;
+      --error:       #c0392b;
+      --error-bg:    #fdf2f2;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--white);
+      color: var(--text);
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 48px;
+      background: var(--navy);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.9);
+      text-decoration: none;
+    }
+
+    .nav-logo span { color: var(--amber-light); }
+
+    .nav-right { display: flex; align-items: center; gap: 32px; }
+
+    .nav-link {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.6);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .nav-link:hover { color: rgba(255,255,255,0.95); }
+
+    .nav-link.active { color: rgba(255,255,255,0.95); }
+
+    .nav-cta {
+      font-size: 0.9rem;
+      font-weight: 600;
+      background: var(--amber);
+      color: white;
+      text-decoration: none;
+      padding: 10px 24px;
+      border-radius: 100px;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .nav-cta:hover { background: var(--amber-dark); transform: translateY(-1px); }
+
+    /* HAMBURGER */
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 6px;
+      margin-left: 12px;
+    }
+
+    .nav-hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: rgba(255,255,255,0.85);
+      border-radius: 2px;
+      transition: transform 0.25s ease, opacity 0.25s ease;
+    }
+
+    .nav-hamburger[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-hamburger[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+    .nav-hamburger[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* MOBILE MENU */
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 64px;
+      left: 0; right: 0;
+      background: var(--navy);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      z-index: 99;
+      padding: 16px 24px 24px;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .mobile-menu.open { display: flex; }
+
+    .mobile-menu-cta {
+      display: block;
+      background: var(--amber);
+      color: white;
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 14px;
+      border-radius: 100px;
+      text-decoration: none;
+      margin-bottom: 8px;
+      transition: background 0.2s;
+    }
+
+    .mobile-menu-cta:hover { background: var(--amber-dark); }
+
+    .mobile-menu-link {
+      display: block;
+      color: rgba(255,255,255,0.65);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 400;
+      padding: 12px 8px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      transition: color 0.2s;
+    }
+
+    .mobile-menu-link:last-child { border-bottom: none; }
+    .mobile-menu-link:hover { color: rgba(255,255,255,0.95); }
+
+    /* PAGE HEADER */
+    .page-header {
+      background: var(--navy);
+      padding: 120px 48px 64px;
+      text-align: center;
+    }
+
+    .page-header-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(200,135,58,0.15);
+      color: var(--amber-light);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 100px;
+      margin-bottom: 24px;
+    }
+
+    .page-header-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.4rem, 5vw, 4rem);
+      font-weight: 700;
+      color: rgba(255,255,255,0.95);
+      line-height: 1.1;
+    }
+
+    .page-header-title em {
+      font-style: italic;
+      color: var(--amber-light);
+    }
+
+    .page-header-sub {
+      margin-top: 20px;
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.6);
+      max-width: 520px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* MAIN CONTENT */
+    .page-body {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 72px 48px 100px;
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 80px;
+      align-items: start;
+    }
+
+    /* FORM */
+    .form-section { display: flex; flex-direction: column; }
+
+    .form-intro {
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.8;
+      color: var(--gray-500);
+      margin-bottom: 40px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      margin-bottom: 24px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+
+    .form-row .form-group { margin-bottom: 0; }
+
+    label {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: 0.02em;
+    }
+
+    label .required {
+      color: var(--amber);
+      margin-left: 3px;
+    }
+
+    label .optional {
+      font-weight: 300;
+      color: var(--gray-500);
+      margin-left: 4px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+      width: 100%;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 300;
+      color: var(--text);
+      background: var(--white);
+      border: 1.5px solid var(--gray-200);
+      border-radius: 10px;
+      padding: 13px 16px;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      outline: none;
+      appearance: none;
+      -webkit-appearance: none;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus,
+    select:focus,
+    textarea:focus {
+      border-color: var(--amber);
+      box-shadow: 0 0 0 3px rgba(200,135,58,0.12);
+    }
+
+    input[type="text"].invalid,
+    input[type="email"].invalid,
+    select.invalid,
+    textarea.invalid {
+      border-color: var(--error);
+      box-shadow: 0 0 0 3px rgba(192,57,43,0.1);
+    }
+
+    .field-error {
+      font-size: 0.78rem;
+      color: var(--error);
+      display: none;
+    }
+
+    .field-error.visible { display: block; }
+
+    select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23666' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      padding-right: 40px;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+      line-height: 1.6;
+    }
+
+    .char-count {
+      font-size: 0.75rem;
+      color: var(--gray-500);
+      text-align: right;
+      margin-top: 4px;
+    }
+
+    .char-count.near-limit { color: var(--amber-dark); }
+    .char-count.at-limit { color: var(--error); }
+
+    .form-divider {
+      border: none;
+      border-top: 1px solid var(--gray-100);
+      margin: 8px 0 32px;
+    }
+
+    .form-section-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 20px;
+    }
+
+    .submit-row {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-top: 8px;
+      flex-wrap: wrap;
+    }
+
+    .btn-submit {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--amber);
+      color: white;
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 500;
+      padding: 15px 32px;
+      border-radius: 100px;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .btn-submit:hover { background: var(--amber-dark); transform: translateY(-2px); }
+    .btn-submit:disabled { background: var(--gray-200); color: var(--gray-500); cursor: not-allowed; transform: none; }
+
+    .submit-note {
+      font-size: 0.8rem;
+      color: var(--gray-500);
+      font-weight: 300;
+    }
+
+    /* SUCCESS STATE */
+    .form-success {
+      display: none;
+      background: var(--amber-pale);
+      border: 1px solid rgba(200,135,58,0.25);
+      border-radius: 16px;
+      padding: 48px 40px;
+      text-align: center;
+    }
+
+    .form-success.visible { display: block; }
+
+    .success-icon {
+      font-size: 2.4rem;
+      margin-bottom: 16px;
+    }
+
+    .success-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+
+    .success-body {
+      font-size: 0.95rem;
+      font-weight: 300;
+      line-height: 1.75;
+      color: var(--gray-500);
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .success-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 28px;
+      color: var(--amber);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .success-back:hover { color: var(--amber-dark); }
+
+    /* SIDEBAR */
+    .sidebar { position: sticky; top: 88px; display: flex; flex-direction: column; gap: 20px; }
+
+    .sidebar-card {
+      background: var(--off-white);
+      border-radius: 16px;
+      padding: 28px;
+      border: 1px solid var(--gray-100);
+    }
+
+    .sidebar-card-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+
+    .sidebar-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .sidebar-list li {
+      display: flex;
+      gap: 10px;
+      font-size: 0.85rem;
+      font-weight: 300;
+      line-height: 1.55;
+      color: var(--gray-700);
+    }
+
+    .sidebar-list li .dot {
+      width: 6px; height: 6px;
+      background: var(--amber);
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-top: 6px;
+    }
+
+    .sidebar-note {
+      font-size: 0.82rem;
+      font-weight: 300;
+      line-height: 1.65;
+      color: var(--gray-500);
+    }
+
+    .sidebar-note + .sidebar-note { margin-top: 10px; }
+
+    .sidebar-card.navy {
+      background: var(--navy);
+      border-color: transparent;
+    }
+
+    .sidebar-card.navy .sidebar-card-title { color: rgba(255,255,255,0.9); }
+    .sidebar-card.navy .sidebar-note { color: rgba(255,255,255,0.55); }
+
+    .sidebar-email {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+      font-style: italic;
+      font-weight: 600;
+      color: var(--amber-light);
+      text-decoration: none;
+      display: block;
+      margin-top: 8px;
+      transition: opacity 0.2s;
+    }
+
+    .sidebar-email:hover { opacity: 0.8; }
+
+    /* FOOTER */
+    footer {
+      background: var(--navy);
+      padding: 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.8);
+    }
+
+    .footer-logo span { color: var(--amber-light); }
+
+    .footer-right {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.65);
+      text-align: right;
+      line-height: 1.6;
+    }
+
+    .footer-link {
+      color: var(--amber-light);
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .footer-link:hover { opacity: 0.8; }
+
+    /* FOCUS STYLES */
+    :focus-visible {
+      outline: 3px solid var(--amber);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    .skip-nav {
+      position: absolute;
+      top: -100px;
+      left: 0;
+      background: var(--amber);
+      color: white;
+      padding: 12px 24px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      z-index: 9999;
+      border-radius: 0 0 8px 0;
+      transition: top 0.2s;
+    }
+
+    .skip-nav:focus { top: 0; }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      nav { padding: 0 24px; }
+      .nav-right .nav-link { display: none; }
+      .nav-cta { display: none; }
+      .nav-hamburger { display: flex; }
+      .page-header { padding: 100px 24px 48px; }
+      .page-body { grid-template-columns: 1fr; gap: 40px; padding: 48px 24px 72px; }
+      .form-row { grid-template-columns: 1fr; }
+      .sidebar { position: static; }
+      footer { flex-direction: column; gap: 16px; text-align: center; }
+      .footer-right { text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-nav">Skip to main content</a>
+
+  <nav aria-label="Main navigation">
+    <a href="/" class="nav-logo">Little Rock:<span> You're Open</span></a>
+    <div class="nav-right">
+      <a href="/#get" class="nav-link">What You Get</a>
+      <a href="/#cost" class="nav-link">Investment</a>
+      <a href="/#how" class="nav-link">How it works</a>
+      <a href="/#about" class="nav-link">About</a>
+      <a href="/#faq" class="nav-link">FAQ</a>
+      <a href="/apply.html" class="nav-cta">Apply Now</a>
+      <button class="nav-hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <a href="/apply.html" class="mobile-menu-cta">Apply Now →</a>
+    <a href="/#get" class="mobile-menu-link">What You Get</a>
+    <a href="/#cost" class="mobile-menu-link">Investment</a>
+    <a href="/#how" class="mobile-menu-link">How it works</a>
+    <a href="/#about" class="mobile-menu-link">About</a>
+    <a href="/#faq" class="mobile-menu-link">FAQ</a>
+  </div>
+
+  <header class="page-header">
+    <div class="page-header-tag">Free · One Business Per Month</div>
+    <h1 class="page-header-title">Apply for a<br><em>free website.</em></h1>
+    <p class="page-header-sub">This is your application for the Little Rock: You're Open program. There are no wrong answers — I read every one personally.</p>
+  </header>
+
+  <main id="main-content">
+    <div class="page-body">
+
+      <!-- FORM -->
+      <div class="form-section">
+
+        <!-- Success message (shown after submission) -->
+        <div class="form-success" id="form-success" role="alert" aria-live="polite">
+          <div class="success-icon" aria-hidden="true">✦</div>
+          <div class="success-title">Application received.</div>
+          <p class="success-body">Thank you for sharing your story. I'll read your application and be in touch within two weeks.</p>
+          <a href="/" class="success-back">← Back to the home page</a>
+        </div>
+
+        <form
+          id="apply-form"
+          action="https://formspree.io/f/xlgzqnow"
+          method="POST"
+          novalidate
+        >
+          <!-- Hidden fields for Formspree -->
+          <input type="hidden" name="_subject" value="New application — Little Rock: You're Open" />
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+          <p class="form-intro">Fill out the form below and I'll be in touch within two weeks. All fields marked with <span style="color:var(--amber)">*</span> are required.</p>
+
+          <!-- Contact info -->
+          <div class="form-section-label">About you</div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your name <span class="required" aria-hidden="true">*</span></label>
+              <input type="text" id="name" name="name" placeholder="First and last name" autocomplete="name" required />
+              <span class="field-error" id="name-error">Please enter your name.</span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email address <span class="required" aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="_replyto" placeholder="you@example.com" autocomplete="email" required />
+              <span class="field-error" id="email-error">Please enter a valid email address.</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone number <span class="optional">(optional)</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="(501) 555-0100" autocomplete="tel" />
+          </div>
+
+          <hr class="form-divider" />
+
+          <!-- Business info -->
+          <div class="form-section-label">About your business</div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="business-name">Business name <span class="required" aria-hidden="true">*</span></label>
+              <input type="text" id="business-name" name="business_name" placeholder="The name people know you by" required />
+              <span class="field-error" id="business-name-error">Please enter your business name.</span>
+            </div>
+            <div class="form-group">
+              <label for="business-type">Type of food business <span class="required" aria-hidden="true">*</span></label>
+              <select id="business-type" name="business_type" required>
+                <option value="" disabled selected>Select one</option>
+                <option value="Restaurant">Restaurant</option>
+                <option value="Food truck">Food truck</option>
+                <option value="Cafe">Cafe</option>
+                <option value="Diner">Diner</option>
+                <option value="Bakery">Bakery</option>
+                <option value="Bar">Bar</option>
+                <option value="Other">Other</option>
+              </select>
+              <span class="field-error" id="business-type-error">Please select a business type.</span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="location">Where are you located? <span class="required" aria-hidden="true">*</span></label>
+              <input type="text" id="location" name="location" placeholder="Neighborhood or address in Little Rock" required />
+              <span class="field-error" id="location-error">Please enter your location.</span>
+            </div>
+            <div class="form-group">
+              <label for="years-open">How long have you been open? <span class="required" aria-hidden="true">*</span></label>
+              <select id="years-open" name="years_open" required>
+                <option value="" disabled selected>Select one</option>
+                <option value="Less than 1 year">Less than 1 year</option>
+                <option value="1–2 years">1–2 years</option>
+                <option value="3–5 years">3–5 years</option>
+                <option value="6–10 years">6–10 years</option>
+                <option value="More than 10 years">More than 10 years</option>
+              </select>
+              <span class="field-error" id="years-open-error">Please select how long you've been open.</span>
+            </div>
+          </div>
+
+          <hr class="form-divider" />
+
+          <!-- Your story -->
+          <div class="form-section-label">Your story</div>
+
+          <div class="form-group">
+            <label for="what-makes-special">What makes your place special? <span class="required" aria-hidden="true">*</span></label>
+            <textarea
+              id="what-makes-special"
+              name="what_makes_special"
+              placeholder="Tell me in your own words — the food, the vibe, the people, the story behind it."
+              maxlength="1000"
+              required
+            ></textarea>
+            <div class="char-count" id="special-count">0 / 1000</div>
+            <span class="field-error" id="what-makes-special-error">Please tell us a little about what makes your place special.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="why-now">Why do you need this help right now? <span class="required" aria-hidden="true">*</span></label>
+            <textarea
+              id="why-now"
+              name="why_now"
+              placeholder="What's going on with your business right now, and how would a website help?"
+              maxlength="1000"
+              required
+            ></textarea>
+            <div class="char-count" id="why-count">0 / 1000</div>
+            <span class="field-error" id="why-now-error">Please share why you need this help right now.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="anything-else">Anything else you want me to know? <span class="optional">(optional)</span></label>
+            <textarea
+              id="anything-else"
+              name="anything_else"
+              placeholder="Links to your social media, photos, menu — anything that helps me understand your business."
+              maxlength="600"
+            ></textarea>
+            <div class="char-count" id="else-count">0 / 600</div>
+          </div>
+
+          <div class="submit-row">
+            <button type="submit" class="btn-submit" id="submit-btn">
+              Send my application →
+            </button>
+            <p class="submit-note">You'll hear back within two weeks.</p>
+          </div>
+          <p style="margin-top:16px;font-size:0.75rem;color:var(--gray-500);font-weight:300;line-height:1.6;">Your information is used only to evaluate your application and will never be shared or sold. By submitting you agree to <a href="https://formspree.io/legal/privacy-policy" target="_blank" rel="noopener noreferrer" style="color:var(--amber);text-decoration:none;">Formspree's privacy policy</a>.</p>
+
+        </form>
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="sidebar" aria-label="Application details">
+
+        <div class="sidebar-card">
+          <div class="sidebar-card-title">Who can apply</div>
+          <ul class="sidebar-list">
+            <li><span class="dot" aria-hidden="true"></span>Restaurants, food trucks, cafes, diners, bakeries, and bars</li>
+            <li><span class="dot" aria-hidden="true"></span>Must be based in Little Rock, Arkansas</li>
+            <li><span class="dot" aria-hidden="true"></span>One business selected per month</li>
+            <li><span class="dot" aria-hidden="true"></span>All applicants receive a response within two weeks</li>
+          </ul>
+        </div>
+
+        <div class="sidebar-card">
+          <div class="sidebar-card-title">What's included — free</div>
+          <ul class="sidebar-list">
+            <li><span class="dot" aria-hidden="true"></span>Website design, build, and launch</li>
+            <li><span class="dot" aria-hidden="true"></span>Menu, hours, and location pages</li>
+            <li><span class="dot" aria-hidden="true"></span>Basic SEO setup</li>
+            <li><span class="dot" aria-hidden="true"></span>1–2 hrs/month support for 3 months after launch</li>
+          </ul>
+        </div>
+
+        <div class="sidebar-card">
+          <div class="sidebar-card-title">Your only cost</div>
+          <p class="sidebar-note">A domain name — about $10–$20 a year. You own it and control it. Everything else is free.</p>
+        </div>
+
+        <div class="sidebar-card navy">
+          <div class="sidebar-card-title">Prefer to email?</div>
+          <p class="sidebar-note">You're welcome to reach out directly.</p>
+          <a href="mailto:LittleRockYoureOpen@gmail.com" class="sidebar-email">LittleRockYoureOpen@gmail.com</a>
+        </div>
+
+      </aside>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-logo">Little Rock<span>: You're Open</span></div>
+    <div class="footer-right">
+      A <a href="https://www.raregemmedia.com" target="_blank" rel="noopener noreferrer" class="footer-link">RARE GEM Media</a> Initiative by <a href="https://www.maeganclark.com" target="_blank" rel="noopener noreferrer" class="footer-link">Maegan Clark</a><br>
+      Little Rock, Arkansas &nbsp;·&nbsp; &copy; 2026 <a href="https://www.raregemmedia.com" target="_blank" rel="noopener noreferrer" class="footer-link">RARE GEM Media</a>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger menu
+    const hamburger = document.querySelector('.nav-hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+      mobileMenu.setAttribute('aria-hidden', !isOpen);
+    });
+
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        mobileMenu.setAttribute('aria-hidden', 'true');
+      });
+    });
+
+    const form = document.getElementById('apply-form');
+    const successBox = document.getElementById('form-success');
+    const submitBtn = document.getElementById('submit-btn');
+
+    // Character counters
+    function setupCounter(textareaId, countId, max) {
+      const el = document.getElementById(textareaId);
+      const counter = document.getElementById(countId);
+      el.addEventListener('input', () => {
+        const len = el.value.length;
+        counter.textContent = `${len} / ${max}`;
+        counter.classList.toggle('near-limit', len >= max * 0.85 && len < max);
+        counter.classList.toggle('at-limit', len >= max);
+      });
+    }
+
+    setupCounter('what-makes-special', 'special-count', 1000);
+    setupCounter('why-now', 'why-count', 1000);
+    setupCounter('anything-else', 'else-count', 600);
+
+    // Inline validation on blur
+    function validateField(input, errorId, customCheck) {
+      const error = document.getElementById(errorId);
+      const invalid = customCheck ? customCheck(input) : !input.value.trim();
+      input.classList.toggle('invalid', invalid);
+      error.classList.toggle('visible', invalid);
+      return !invalid;
+    }
+
+    document.getElementById('name').addEventListener('blur', function() {
+      validateField(this, 'name-error');
+    });
+
+    document.getElementById('email').addEventListener('blur', function() {
+      validateField(this, 'email-error', el => !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value));
+    });
+
+    document.getElementById('business-name').addEventListener('blur', function() {
+      validateField(this, 'business-name-error');
+    });
+
+    document.getElementById('business-type').addEventListener('blur', function() {
+      validateField(this, 'business-type-error', el => !el.value);
+    });
+
+    document.getElementById('location').addEventListener('blur', function() {
+      validateField(this, 'location-error');
+    });
+
+    document.getElementById('years-open').addEventListener('blur', function() {
+      validateField(this, 'years-open-error', el => !el.value);
+    });
+
+    document.getElementById('what-makes-special').addEventListener('blur', function() {
+      validateField(this, 'what-makes-special-error');
+    });
+
+    document.getElementById('why-now').addEventListener('blur', function() {
+      validateField(this, 'why-now-error');
+    });
+
+    // Submit
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      const valid = [
+        validateField(document.getElementById('name'), 'name-error'),
+        validateField(document.getElementById('email'), 'email-error', el => !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value)),
+        validateField(document.getElementById('business-name'), 'business-name-error'),
+        validateField(document.getElementById('business-type'), 'business-type-error', el => !el.value),
+        validateField(document.getElementById('location'), 'location-error'),
+        validateField(document.getElementById('years-open'), 'years-open-error', el => !el.value),
+        validateField(document.getElementById('what-makes-special'), 'what-makes-special-error'),
+        validateField(document.getElementById('why-now'), 'why-now-error'),
+      ].every(Boolean);
+
+      if (!valid) {
+        const firstError = form.querySelector('.invalid');
+        if (firstError) firstError.focus();
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending…';
+
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'Accept': 'application/json' },
+        });
+
+        if (response.ok) {
+          form.style.display = 'none';
+          successBox.classList.add('visible');
+          successBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else {
+          throw new Error('Server error');
+        }
+      } catch {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send my application →';
+        alert('Something went wrong. Please try again or email us directly at LittleRockYoureOpen@gmail.com.');
+      }
+    });
+  </script>
+
+</body>
+</html>
